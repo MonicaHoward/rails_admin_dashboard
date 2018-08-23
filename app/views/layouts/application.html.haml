@@ -22,39 +22,39 @@
               %button
               %img{ src: "#", alt: "#" }
               %input{ type: "text", placeholder: "Search Docs...", name: "Search" }
-          %ul{ class: "info-right" }
-            %li{ class: "settings" }
-              %a{ href: "#", class: "waves-effect waves-teal", title: "" }
-                %img{ src: "#", alt: "settings"}
-            %li{ class: "notification" }
-              %a{ href: "#", class: "waves-effect waves-teal", title: "" } 1
-            %li{ class: "user" }
-              %div{ class: "avatar" }
-                %img{ src: "#", alt: "avatar" }
-              %div{ class: "info" }
-                %p{ class: "name" } Hello, User
-                %p{ class: "address" } #{current_user.email}
-              %div{ class: "arrow-down" }
-                %i{ class: "fa fa-angle-down" }
-                %i{ class: "fa fa-angle-up" }
-              %div{class: "dropdown-menu" }
-                %ul
-                  %li
-                    %div{ class: "avatar" }
-                      %img{ src: "#", alt: "avatar" }
-                    %div{ class: "profile" }
-                      %a{ href: "#" } View Profile
-                    %div{ class: "clearfix" }
-                  %li
-                    %a{ href: "#", class: "waves-effect" }My Account
-                  %li
-                    %a{ href: "#", class: "waves-effect" }Setting
-                  %li
-                    %a{ href: "#", class: "waves-effect" }Logout
-              %div{ class: "clearfix" }
-            %li{ class: "button-menu-right" }
-              %img{ src: "", alt: "menu" }
-        %div{ class: "clearfix" }
+        %ul{ class: "info-right" }
+          %li{ class: "settings" }
+            %a{ href: "#", class: "waves-effect waves-teal", title: "" }
+              %img{ src: "#", alt: "settings"}
+          %li{ class: "notification" }
+            %a{ href: "#", class: "waves-effect waves-teal", title: "" } 1
+          %li{ class: "user" }
+            %div{ class: "avatar" }
+              %img{ src: "#", alt: "avatar" }
+            %div{ class: "info" }
+              %p{ class: "name" } Hello, User
+              %p{ class: "address" } #{current_user.email}
+            %div{ class: "arrow-down" }
+              %i{ class: "fa fa-angle-down" }
+              %i{ class: "fa fa-angle-up" }
+            %div{class: "dropdown-menu" }
+              %ul
+                %li
+                  %div{ class: "avatar" }
+                    %img{ src: "#", alt: "avatar" }
+                  %div{ class: "profile" }
+                    %a{ href: "#" } View Profile
+                  %div{ class: "clearfix" }
+                %li
+                  %a{ href: "#", class: "waves-effect" }My Account
+                %li
+                  %a{ href: "#", class: "waves-effect" }Setting
+                %li
+                  %a{ href: "#", class: "waves-effect" }Logout
+            %div{ class: "clearfix" }
+          %li{ class: "button-menu-right" }
+            %img{ src: "", alt: "menu" }
+      %div{ class: "clearfix" }
 
   = yield
 
