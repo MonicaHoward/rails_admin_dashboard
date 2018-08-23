@@ -1,36 +1,12 @@
 @import "bootstrap";
 @import "docs";
 @import "pages";
-
-/**
-  * Name: One Admin
-  * Version: 1.0
-  * Author: Themesflat
-  * Author URI: http://www.themesflat.com
-*/
+@import "bootstrap4-alpha3.min";
 @import url("mCustomScrollbar.css");
 @import url("font-awesome.css");
 @import url("waves.min.css");
 @import url("material-design-iconic-font.min.css");
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Oswald:200,300,400,500,600,700');
-
-/**
- *	Reset
-  *	Repeatable Patterns
-  *	Header
-  * Navbar Top
-  * Vertical Navigation
-  *	Member Status
-  * Main
-  *	Box
-  *	Legend
-  *	Box Message
-  *	Message Info
-  *	Preload
-*/
-
-/* Reset
--------------------------------------------------------------- */
 html {
   overflow-y: scroll;
   -webkit-text-size-adjust: 100%;

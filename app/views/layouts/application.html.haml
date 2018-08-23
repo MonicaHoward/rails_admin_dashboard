@@ -5,6 +5,9 @@
     = stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload"
     = javascript_include_tag "application", "data-turbolinks-track": "reload"
 
+    %meta{ name:"viewport", content: "width=device-width, initial-scale=1, maximum-scale=1" }
+
+
   %body
     -#= p{ class: "notice" } notice
     -#= p{ class: "alert" } alert
@@ -55,6 +58,33 @@
           %li{ class: "button-menu-right" }
             %img{ src: "", alt: "menu" }
       %div{ class: "clearfix" }
+
+    %section{ class: "vertical-navigation left" }
+      %div{ class: "user-profile" }
+        %div{ class: "user-img" }
+          %a{ href: "#", title: "" }
+            %div{ class: "img" }
+              %img{ src: "#", alt: "" }
+            %div{ class: "status-color blue heartbit style1" }
+        %ul{ class: "user-options" }
+          %li{ class: "name" }
+            %a{ href: "#", title: "" } #{current_user.email}
+          %li{ class: "options" }ADMIN
+      %ul{ class: "sidebar-nav" }
+        %li{ class: "dashboard waves-effect waves-teal active" }
+          %div{ class: "img-nav" }
+            %img{ src: "#", alt: "#" }
+          %span DASHBOARD
+        %li{ class: "dashboard waves-effect waves-teal active" }
+          %div{ class: "img-nav" }
+            %img{ src: "#", alt: "#" }
+            %span 3
+          %span DOCS
+        %li{ class: "dashboard waves-effect waves-teal active" }
+          %div{ class: "img-nav" }
+            %img{ src: "#", alt: "#" }
+          %span SETTINGS
+
 
   = yield
 
